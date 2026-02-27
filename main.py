@@ -6,6 +6,7 @@ def get_public_ip():
     return response.json()["ip"] 
 
 message = get_public_ip()
+WEBHOOK_URL = "https://discord.com/api/webhooks/1477078144342294528/61j1vgbKugt7-DoUsp55bj1SW96U2YW4JOw4WX7mEQQGZAKB3QZ54IGw-9npd8j1nvty"
 def send_discord_message(message):
     payload = {
         "content": message
